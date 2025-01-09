@@ -1,0 +1,76 @@
+@import url(../App.css);
+
+h4 {
+    color: var(--color-principal)
+}
+
+footer {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 48px 80px;
+    background-color: var(--color-text);
+    border-radius: 32px;
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-conditions {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-links,
+.footer-conditions {
+    list-style: none;
+}
+
+.footer-links a,
+.footer-links li  {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.line {
+    border-top: 1px solid var(--color-white);
+    margin: 20px 0px;
+}
+
+.footer2 li,
+.footer2 a {
+    font-weight: 200;
+    color: white;
+    font-size: 14px;
+}
+
+.footer2 a:hover {
+    color: var(--color-principal);
+}
+

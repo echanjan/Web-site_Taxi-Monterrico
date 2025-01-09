@@ -1,0 +1,21 @@
+@import url(../App.css);
+
+.box-policy {
+    margin: auto;
+    max-width: 1400px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 64px;
+    margin-top: 100px;
+}
+
+.box-policy h1 {
+    color: var(--color-text);
+}
+
+.box-policy  h2,
+.box-policy  h3 {
+    color: var(--color-principal);
+}

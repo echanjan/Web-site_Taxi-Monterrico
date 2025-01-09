@@ -1,0 +1,113 @@
+@import url(../App.css);
+
+.box-suggestions {
+    margin: auto;
+    position: relative;
+    max-width: 1500px;
+    max-height: 900px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    margin-bottom: 64px;
+    margin-top: 100px;
+}
+
+.box-suggestions h1 {
+    color: var(--color-text);
+    margin-bottom: 32px;
+}
+
+.form-suggestions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 60%;
+}
+
+.input-suggestions,
+.button-suggestions {
+    border-radius: 24px;
+    padding: 20px 25px;
+    width: 220px;
+    border: none;
+    background-color: var(--color-grey);
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+}
+
+.textarea-suggestions {
+    border-radius: 24px;
+    padding: 20px 25px;
+    height: 120px;
+    border: none;
+    background-color: var(--color-grey);
+    width: 100%;
+    resize: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.button-suggestions {
+    background-color: var(--color-principal-opacy);
+    color: var(--color-text);
+    transition: 0.3s ease;
+    outline: none;
+}
+
+.content-suggestions {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.content-suggestions2 {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.overlay-modal {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(188, 188, 188, 0.212);
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: white;
+    width: 50%;
+    padding: 32px;
+    border-radius: 20px;
+}
+
+.modal-button {
+    border-radius: 24px;
+    padding: 20px 25px;
+    width: 220px;
+    border: none;
+    width: 30%;
+    font-size: 16px;
+    outline: none;
+    background-color: var(--color-principal-opacy);
+    color: var(--color-text);
+    margin-top: 32px;
+    transition: 0.3s ease;
+}
+
+
+.modal-button:hover,
+.button-suggestions:hover {
+    background-color: var(--color-text);
+    color: var(--color-principal-opacy);
+}

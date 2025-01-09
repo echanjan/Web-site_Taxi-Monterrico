@@ -1,0 +1,90 @@
+@import url(../App.css);
+
+
+.tab-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: var(--color-principal-opacy);
+    color: var(--color-text);
+    border: none;
+    transition: 0.3s ease;
+    font-size: 32px;
+}
+
+.tab-button:hover {
+    background-color: var(--color-text);
+    color: var(--color-principal-opacy);
+}
+
+.tab-button:hover p {
+    color: var(--color-principal-opacy);
+}
+
+.active p {
+    color: var(--color-principal-opacy);
+}
+
+.active {
+    border: 2px solid var(--color-principal);
+    background-color: var(--color-text);
+    color: var(--color-principal-opacy);
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+    gap: 15px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.faq-tabs {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.faq-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.iconCompress {
+    color: var(--color-principal);
+}
+
+.faq-question {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: var(--color-grey);
+    color: var(--color-text);
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-size: 18px;
+}
+
+.faq-answer {
+    background-color: white;
+    color: var(--color-text);
+    border-radius: 12px;
+    max-height: 0; /* Inicialmente cerrado */
+    overflow: hidden; /* Ocultar contenido que exceda la altura */
+    opacity: 0; /* Inicialmente transparente */
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease, padding 0.3s ease;  /* Transición suave */
+    font-size: 18px;
+}
+
+.faq-answer.expanded {
+    margin-top: 12px;
+    max-height: 200px; /* Ajusta según el contenido más extenso */
+    opacity: 1; /* Completamente visible */
+    padding: 15px 20px;
+  }
