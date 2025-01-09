@@ -12,6 +12,11 @@
     max-width: 400px;
 }
 
+.title-section {
+    color: var(--color-text);
+    margin-top: 8px;
+}
+
 .image-section {
     width: 32px;
 }

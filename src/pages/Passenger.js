@@ -60,6 +60,8 @@ function Passenger() {
         imageicon3={support}
         title3="Soporte las 24 horas"
         text3="Nuestra central telefónica (01) 611-5555 está lista para ayudarte en cualquier momento. ¡Estamos aquí para lo que necesites!"
+
+        headingLevel={2} // Ajusta el nivel según el contexto
       />
       <Article
         section="Aeropuerto"

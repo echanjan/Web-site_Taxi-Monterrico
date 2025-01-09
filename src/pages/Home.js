@@ -53,6 +53,8 @@ function Home() {
                 imageicon3={experience}
                 title3="Nuestros años nos avalan"
                 text3="Con más de 27 años de vida, hemos creado un sistema propio, el cual nos permite brindarte un servicio de excelencia pre y post solicitud."
+
+                headingLevel={2} // Ajusta el nivel según el contexto
             />
             <Article
                 section="Empresas"

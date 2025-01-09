@@ -74,6 +74,8 @@ function Corporate() {
                 imageicon3={vip}
                 title3="Servicio personalizado"
                 text3="Disfruta de atención exclusiva de ejecutivos dedicados a tu empresa, diseñado para facilitar tu experiencia y asegurar que aproveches al máximo nuestros servicios."
+
+                headingLevel={2} // Ajusta el nivel según el contexto
             />
             <div className='content-logo'>
                 <div className='box-logo'>

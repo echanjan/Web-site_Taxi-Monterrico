@@ -37,6 +37,8 @@
 .intranet-button  {
   /* Sin viñetas en la lista */
   display: flex;
+  justify-content: center;
+  align-items: center;
   /* Los elementos se alinearán en una línea */
   gap: 50px;
   background-color: var(--color-body);
@@ -49,17 +51,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-principal);
-  color: white;
+  background-color: white;
+  color: var(--color-principal);
+  border: 2px solid var(--color-principal-dark);
   /* color: var(--color-white); */
   transition: background-color 0.3s ease;
-  border: none;
   font-size: 16px;
 }
 
 .contact-button:hover {
-  color: var(--color-principal-opacy);
-  background-color: var(--color-text);
+  color: var(--color-text);
+  background-color: var(--color-principal-opacy);
 }
 
 .intranet-button:hover {
@@ -101,6 +103,8 @@ ul {
 
 .navbar-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   /* margin-right: 15em; */
 }

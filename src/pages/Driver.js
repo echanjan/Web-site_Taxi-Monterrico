@@ -47,6 +47,8 @@ function Driver() {
                 imageicon3={lock}
                 title3="Seguridad y transparencia"
                 text3="Llevarás clientes corporativos. Conoce el destino, planifica tu ruta y disfruta de un viaje tranquilo. Te ofrecemos la confianza que necesitas en cada trayecto. ¡Conduce con comodidad y seguridad!"
+
+                headingLevel={2} // Ajusta el nivel según el contexto
             />
             <Article
                 section="Requisitos"
