@@ -41,4 +41,10 @@
     font-size: 32px;
 }
 
-
+@media (max-width: 770px) {
+    .box-type-car {
+        padding: 0px 16px;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+}

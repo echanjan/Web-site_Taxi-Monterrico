@@ -8,7 +8,7 @@ function Policy() {
             <p>
                 Esta política describe nuestras prácticas de privacidad, información personal que consultamos, cómo se le utiliza y comparte, además las opciones y derechos que usted tiene en relación con esta información. Se aplica a nuestros Servicios donde sea que los proporcionemos, y nos atenemos a las normas locales vigentes en relación con todas las prácticas descritas en esta política.
 
-                Esta política alcanza todos los usuarios de Monterrico App y Monterrico App Driver, cualquiera de las aplicaciones móviles de Monterrico App y Monterrico App Driver(en adelante, las "Aplicaciones") sea para Usuario Conductor o Usuario Pasajero, y cualquier servicio que proporcionemos a través del Sitio web o de las Aplicaciones, así como cuando usted contacte con nosotros por teléfono, correo electrónico, redes sociales, en persona o cualquier otro medio (en adelante en conjunto, los "Servicios").
+                Esta política alcanza todos los usuarios de Taxi Monterrico y Taxi Monterrico Driver, cualquiera de las aplicaciones móviles de Taxi Monterrico y Taxi Monterrico Driver(en adelante, las "Aplicaciones") sea para Usuario Conductor o Usuario Pasajero, y cualquier servicio que proporcionemos a través del Sitio web o de las Aplicaciones, así como cuando usted contacte con nosotros por teléfono, correo electrónico, redes sociales, en persona o cualquier otro medio (en adelante en conjunto, los "Servicios").
 
                 Para su satisfacción y correcto funcionamiento de nuestros servicios, le comentamos que recopilamos y usamos la siguiente información:.
 
@@ -62,7 +62,7 @@ function Policy() {
                 Conservamos su información durante el tiempo necesario para prestarle nuestros Servicios y para los demás fines establecidos en esta política. Los periodos de conservación serán diferentes según el tipo de información, la categoría de Usuario a la que se refiera la información y los fines para los que la utilicemos. Cuando procesamos su información para proporcionarle el Servicio, conservamos esta información mientras usted tenga una cuenta con nosotros. Podemos retener la información del Usuario después de la terminación de la cuenta debido a requerimientos legales o reglamentarios o por razones indicadas en esta política, incluyendo lo explicado en la sección titulada "Eliminación de la cuenta. Conservamos la información de las transacciones, como los viajes y los pagos, durante el periodo de tiempo necesario para cumplir con las obligaciones fiscales. También conservamos información con el fin de responder a cualquier reclamación legal o de satisfacción en relación con los Servicios.
             </p>
             <h2>
-                Al utilizar Monterrico App y Monterrico App Driver, usted acepta los términos más actuales de esta política.
+                Al utilizar Taxi Monterrico y Taxi Monterrico Driver, usted acepta los términos más actuales de esta política.
             </h2>
         </div>
     )

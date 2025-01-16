@@ -100,7 +100,49 @@
 
 .article-container.reverse {
     flex-direction: row;
-    height: 400px;
+    /* height: 400px; */
     /* Cambia el orden de los elementos */
 }
 
+/* Media query para pantallas menores de 770px */
+@media (max-width: 770px) {
+    .article-container {
+        flex-direction: column !important; /* Cambia a diseño vertical */
+        align-items: center; /* Centra los elementos verticalmente */
+        gap: 32px; /* Espacio entre los elementos */
+        margin-bottom: 32px;
+    }
+
+    .article-container.reverse {
+        flex-direction: column-reverse !important;
+    }
+
+    .article {
+        width: 90%; /* Ajusta el ancho del contenido */
+        height: auto; /* Permite que el contenido sea dinámico */
+    }
+
+    .box-article-img {
+        width: 100%; /* La imagen ocupará todo el ancho */
+        height: auto; /* Ajusta la altura automáticamente */
+        border-radius: 0px;
+        
+    }
+
+    .article-img {
+        height: auto; /* Ajusta automáticamente la altura */
+        width: 100%; /* La imagen será responsiva */
+    }
+
+    .text-section {
+        font-size: 16px; /* Reduce el tamaño del texto para pantallas pequeñas */
+    }
+
+    .article-title {
+        font-size: 20px; /* Ajusta el tamaño del título */
+    }
+
+    .article-button {
+        font-size: 14px; /* Reduce ligeramente el tamaño del botón */
+    }
+}

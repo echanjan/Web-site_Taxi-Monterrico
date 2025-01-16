@@ -3,7 +3,7 @@ import React from 'react';
 // import 'aos/dist/aos.css'; // Importa el CSS de AOS
 import { Link } from 'react-router-dom';
 import '../components/footer.css';
-import logotipoFooter from '../assets/images/logotipoTaxiMonterrico_Negativo.png';
+import logotipoFooter from '../assets/images/logotipoTaxiMonterrico_Negativo.webp';
 
 function Footer() {
     return (
@@ -11,7 +11,7 @@ function Footer() {
             <div className='footer1'>
                 <div className="footer-logo">
                     <Link to="/">
-                        <img src={logotipoFooter} alt="Logotipo Taxi Monterrico" className='logotipo-monterricoapp' />
+                        <img src={logotipoFooter} alt="Logotipo Taxi Monterrico" className='logotipo-taximonterrico-footer' />
                     </Link>
                 </div>
                 <div className='box-footer'>
@@ -36,8 +36,10 @@ function Footer() {
                 </div>
                 <div className='box-footer'>
                     <h4>Contacto</h4>
-                    <h4>Visitanos</h4>
                     <ul className="footer-links">
+                        <li>
+                            <h4>Visitanos</h4>
+                        </li>
                         <li>
                             Av Prolongacion Iquitos 2299, Lince, Lima
                         </li>
@@ -57,7 +59,6 @@ function Footer() {
                 </div>
             </div>
             <div className='line'>
-
             </div>
             <div className='footer2'>
                 <ul className='footer-conditions' >

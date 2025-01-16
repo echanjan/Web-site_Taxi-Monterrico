@@ -19,3 +19,13 @@
 .box-policy  h3 {
     color: var(--color-principal);
 }
+
+@media (max-width: 770px) {
+    .box-policy h1 {
+        line-height: 56px;
+    }
+
+    .box-policy {
+        padding: 16px;
+    }
+}

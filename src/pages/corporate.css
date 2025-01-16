@@ -124,12 +124,50 @@
 }
 
 .button-form {
-    background-color: var(--color-principal-opacy);
-    color: var(--color-text);
+    background-color: var(--color-text);
+    color: white;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .button-form:hover {
-    background-color: var(--color-text);
-    color: var(--color-principal-opacy);
+    background-color: var(--color-principal-opacy);
+    color: white;
+}
+
+.custom-spinner {
+    color: #4caf50 !important; /* Cambia el color */
+    width: 50px !important;   /* Cambia el tamaño */
+    height: 50px !important;  /* Cambia el tamaño */
+}
+
+@media (max-width: 770px) {
+
+    .box-form {
+        width: 100%;
+    }
+
+    .input-form, .button-form {
+        width: 100%;
+    }
+
+    .content-logo {
+        display: none;
+    }
+
+    .form-contact {
+        width: 90%;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px;
+        margin-bottom: 32px;
+    }
+
+    .box-text-form {
+        max-width: 100%;
+    }
+
+    .box-imagen-form {
+        display: none;
+    }
 }

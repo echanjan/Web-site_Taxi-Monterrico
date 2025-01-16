@@ -69,7 +69,6 @@ function Home() {
                 button="Más información"
                 onButtonClick={() => goToSection('/corporate', 'formContact')}
                 img={empresas}
-                reverse={true}
             />
         </div>
     );

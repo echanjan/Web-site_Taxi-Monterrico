@@ -24,7 +24,13 @@ footer {
 }
 
 .footer-logo {
-    width: 200px;
+    width: fit-content;
+}
+
+.footer-logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer1 {
@@ -74,3 +80,58 @@ footer {
     color: var(--color-principal);
 }
 
+.logotipo-taximonterrico-footer {
+    width: 60%;
+    margin: auto;
+}
+
+/* Media Query para pantallas menores de 770px */
+@media (max-width: 770px) {
+    .footer {
+        padding: 16px 16px; /* Reduce el padding general */
+        border-radius: 0px; /* Ajusta el borde para pantallas pequeñas */
+    }
+
+    .footer1 {
+        flex-direction: column; /* Cambia a diseño vertical */
+        gap: 16px; /* Espacio entre las secciones */
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Centra el logo */
+    }
+
+    .box-footer {
+        text-align: center; /* Centra el contenido */
+        align-items: center; /* Alinea los elementos en el centro */
+        gap: 0px;
+    }
+
+    .footer-links {
+        padding: 8px;
+        margin-top: 0px;
+    }
+
+    .footer-links a,
+    .footer-links li {
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+
+    .footer2 {
+        text-align: center; /* Centra el contenido en pantallas pequeñas */
+    }
+
+    .footer-conditions {
+        flex-direction: column; /* Cambia a diseño vertical */
+        gap: 16px; /* Espacio entre los elementos */
+        text-align: center; /* Centra los textos */
+        margin-bottom: 0px;
+    }
+
+    .line {
+        margin: 0px 0; /* Reduce el margen superior e inferior */
+    }
+}

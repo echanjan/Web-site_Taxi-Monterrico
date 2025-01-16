@@ -1,11 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import '../pages/suggestions.css';
+import Swal from 'sweetalert2'
+import DatePicker from "react-datepicker";
+import CircularProgress from '@mui/material/CircularProgress';
 
 function Suggestions() {
     useEffect(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }, []); // Se ejecuta solo al montar el componente
 
+    const [isLoading, setIsLoading] = useState(false); // Estado para controlar el spinner
     const [isModalVisible, setIsModalVisible] = useState(true);
     const [uploadedImageUrl, setUploadedImageUrl] = useState('');
 
@@ -49,10 +54,10 @@ function Suggestions() {
         try {
             const imageUrl = await uploadImage(file);
             setUploadedImageUrl(imageUrl);
-            alert('Imagen subida exitosamente.');
+            console.log('Imagen subida exitosamente.');
         } catch (error) {
             console.error(error);
-            alert('Error al subir la imagen.');
+            console.log('Error al subir la imagen.');
         }
     };
 
@@ -76,27 +81,83 @@ function Suggestions() {
         };
 
         try {
-            const response = await fetch('https://apibeta.monterrico.app/api/Incidenciau/Registro', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json', // Enviar como JSON
-                },
-                body: JSON.stringify(data),
-            });
+            const response = await axios.post(
+                'https://apibeta.monterrico.app/api/Incidenciau/Registro',
+                data, // El cuerpo del POST
+                {
+                    headers: {
+                        'Content-Type': 'application/json', // Enviar como JSON
+                    },
+                }
+            );
 
-            if (response.ok) {
-                const result = await response.json();
-                alert('Formulario enviado exitosamente.');
-                console.log('Respuesta del servidor:', result);
+            // Verificar si la respuesta fue exitosa
+            if (response.data.estatus === 200) {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "¡Enviado!",
+                    text: "¡Gracias por enviar tu sugerencias, muy pronto nos comunicaremos contigo!",
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+
+            } else if (response.data.estatus === 400) {
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "¡Error!",
+                    text: response.data.message,
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+
             } else {
-                const errorData = await response.json();
-                console.error('Error al enviar:', errorData);
-                alert('Error al enviar el formulario.');
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "¡Error!",
+                    text: response.data.message,
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+
             }
         } catch (error) {
-            console.error('Error en la solicitud:', error);
-            alert('Hubo un error en la conexión.');
+            // Manejo de errores en la solicitud
+            if (error.response) {
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "¡Error!",
+                    text: error.response.data.message,
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+
+            } else if (error.request) {
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "¡Error!",
+                    text: "No se pudo conectar con el servidor. Verifica tu conexión.",
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+
+            } else {
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "¡Error!",
+                    text: "Ocurrió un error al configurar la solicitud.",
+                    showConfirmButton: false,
+                    timer: 3000
+                })
+
+            }
         }
+
     };
     return (
         <div className='box-suggestions'>
@@ -115,7 +176,10 @@ function Suggestions() {
             <h1>Datos del incidente</h1>
             <form className='form-suggestions' onSubmit={handleSubmit}>
                 <div className='content-suggestions'>
-                    <input id='rFecha' className='input-suggestions' type='date'></input>
+                    <div className="input-suggestions-date">
+                        <label>Fecha</label>
+                        <input id="rFecha" className="input-date" type="date" placeholder="dd/mm/aaaa" />
+                    </div>
                     <input id='rNservicio' className='input-suggestions' type='number' placeholder='Número de servicio'></input>
                     <select id='rCsolicitud' className='input-suggestions' title='canal de solicitud' required>
                         <option>Call center</option>
@@ -145,7 +209,9 @@ function Suggestions() {
                     <textarea id='rDetalle' className='textarea-suggestions' placeholder='Escribe los detalles de lo sucedido'></textarea>
                     <textarea id='rSolicitud' className='textarea-suggestions' placeholder='Escribe tu solicitud'></textarea>
                     <input id="rFile" className="input-suggestions" type="file" onChange={handleFileChange}></input>
-                    <button id='rSubmit' className='button-suggestions' type='submit'>Enviar</button>
+                    <button id='rSubmit' className='button-suggestions' type='submit'>
+                        {isLoading ? <CircularProgress size={20} sx={{ color: '#ffffff', marginRight: '10px' }} /> : 'Enviar'}
+                    </button>
                 </div>
             </form>
         </div>

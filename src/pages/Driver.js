@@ -41,7 +41,7 @@ function Driver() {
                 text1="Con nuestro servicio, tú decides cuándo estás al volante. Sé el dueño de tu tiempo y disfruta de la flexibilidad para conducir cuando mejor te convenga."
 
                 imageicon2={money}
-                title2="Cange diario"
+                title2="Canje diario"
                 text2="¿Necesitas ingresos extra? Cajea a diario de tus ganancias. Tu esfuerzo se traduce directamente en recompensas financieras ¡Así que gana a tu propio ritmo!"
 
                 imageicon3={lock}

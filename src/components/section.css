@@ -21,3 +21,31 @@
     width: 32px;
 }
 
+@media (max-width: 770px) {
+    .section {
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: center; /* Centra las secciones verticalmente */
+        gap: 24px; /* Espacio entre las secciones */
+        margin-bottom: 32px;
+    }
+
+    .section-container {
+        max-width: 90%; /* Ajusta el ancho de cada sección */
+        text-align: center; /* Centra el texto */
+    }
+
+    .image-section {
+        width: 48px; /* Aumenta ligeramente el tamaño de las imágenes */
+        margin-bottom: 0px; /* Añade espacio debajo de las imágenes */
+    }
+
+    .title-section {
+        font-size: 20px; /* Ajusta el tamaño del título */
+        margin-top: 8px; /* Añade espacio superior */
+    }
+
+    .text-section {
+        font-size: 16px; /* Ajusta el tamaño del texto */
+        line-height: 1.5; /* Mejora la legibilidad */
+    }
+}
