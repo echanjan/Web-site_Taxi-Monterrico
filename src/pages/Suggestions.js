@@ -168,6 +168,7 @@ function Suggestions() {
                     showConfirmButton: false,
                     timer: 3000
                 })
+                clearStates();
 
             } else if (response.data.estatus === 400) {
                 Swal.fire({
@@ -226,6 +227,29 @@ function Suggestions() {
         }
 
     };
+
+    const clearStates = () => {
+        settipodocumento('');
+        setndocumento('');
+        setnombres('');
+        setapellidos('');
+        setdireccion('');
+        setdistrito('');
+        settelefono('');
+        setemail('');
+        setpadremadre('');
+        setfechorincidente('');
+        setmediocomunicacion('');
+        setidreserva('');
+        setcontratado('');
+        setmonto('');
+        setdescripcion('');
+        setResponseDate('');
+        settiporeclamo('');
+        setdetallereclamo('');
+        setpedidoreclamo('');
+        setUploadedImageUrl('')
+    }
 
     return (
         <div className='box-suggestions'>
