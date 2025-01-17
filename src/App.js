@@ -25,7 +25,7 @@ function App() {
         <Route path="/passenger" element={<Passenger />} />
         <Route path="/driver" element={<Driver />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/suggestions" element={<Suggestions />} />
+        <Route path="/claimbook" element={<Suggestions />} />
         <Route path="/policy" element={<Policy />} />
         {/* <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} /> */}

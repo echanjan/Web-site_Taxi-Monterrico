@@ -54,6 +54,8 @@ footer {
 .footer-links,
 .footer-conditions {
     list-style: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .footer-links a,
@@ -62,6 +64,11 @@ footer {
     color: white;
     font-size: 16px;
     font-weight: 200;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: rgb(190, 190, 190);
 }
 
 .line {
@@ -74,6 +81,7 @@ footer {
     font-weight: 200;
     color: white;
     font-size: 14px;
+    transition: 0.3s ease;
 }
 
 .footer2 a:hover {
@@ -83,6 +91,17 @@ footer {
 .logotipo-taximonterrico-footer {
     width: 60%;
     margin: auto;
+}
+
+.box-libro-reclamaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.libro-reclamaciones {
+    width: 48px;
 }
 
 /* Media Query para pantallas menores de 770px */
@@ -132,6 +151,6 @@ footer {
     }
 
     .line {
-        margin: 0px 0; /* Reduce el margen superior e inferior */
+        margin: 8px 0px; /* Reduce el margen superior e inferior */
     }
 }

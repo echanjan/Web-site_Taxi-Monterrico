@@ -41,6 +41,10 @@
     margin-bottom: 64px;
 }
 
+.faq-item {
+    width: 100%;
+}
+
 .faq-tabs {
     width: 1500px;
     margin: auto;
@@ -75,16 +79,40 @@
     background-color: white;
     color: var(--color-text);
     border-radius: 12px;
-    max-height: 0; /* Inicialmente cerrado */
-    overflow: hidden; /* Ocultar contenido que exceda la altura */
-    opacity: 0; /* Inicialmente transparente */
-    transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease, padding 0.3s ease;  /* Transición suave */
+    max-height: 0;
+    /* Inicialmente cerrado */
+    overflow: hidden;
+    /* Ocultar contenido que exceda la altura */
+    opacity: 0;
+    /* Inicialmente transparente */
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin-top 0.3s ease, padding 0.3s ease;
+    /* Transición suave */
     font-size: 18px;
 }
 
 .faq-answer.expanded {
     margin-top: 12px;
-    max-height: 200px; /* Ajusta según el contenido más extenso */
-    opacity: 1; /* Completamente visible */
+    max-height: 200px;
+    /* Ajusta según el contenido más extenso */
+    opacity: 1;
+    /* Completamente visible */
     padding: 15px 20px;
-  }
+}
+
+@media (max-width: 770px) {
+    .faq-tabs {
+        width: 100%;
+    }
+
+    .faq-container {
+        margin-bottom: 32px;
+        margin-top: 32px;
+        width: 100%;
+        padding: 0px 16px;
+    }
+
+    .faq-item {
+        width: auto;
+    }
+
+}

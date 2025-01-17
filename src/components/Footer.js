@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../components/footer.css';
 import logotipoFooter from '../assets/images/logotipoTaxiMonterrico_Negativo.webp';
+import libroReclamaciones from '../assets/images/libro_reclamaciones.png'
 
 function Footer() {
     return (
@@ -30,7 +31,7 @@ function Footer() {
                             <Link to="/faq">Preguntas frecuentes</Link>
                         </li>
                         <li>
-                            <Link to="/suggestions">Reclamos y sugerencias</Link>
+                            <Link className='box-libro-reclamaciones' to="/claimbook"> <img className='libro-reclamaciones' src={libroReclamaciones} alt='Libro de reclamaciones'></img> Libro de reclamaciones</Link>
                         </li>
                     </ul>
                 </div>
