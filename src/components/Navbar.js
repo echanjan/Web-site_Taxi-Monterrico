@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../components/navbar.css';
-import logotipo from '../assets/images/logotipoTaxiMonterrico.webp';
+import logotipo from '../assets/images/192x192_2.png';
 import { openInNewTab, scrollToSection, useNavigation } from '../utils/functions';
 import { TbMenu2, TbX, TbUserCircle } from "react-icons/tb";
 

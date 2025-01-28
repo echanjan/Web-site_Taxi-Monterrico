@@ -3,7 +3,7 @@ import React from 'react';
 // import 'aos/dist/aos.css'; // Importa el CSS de AOS
 import { Link } from 'react-router-dom';
 import '../components/footer.css';
-import logotipoFooter from '../assets/images/logotipoTaxiMonterrico_Negativo.webp';
+import logotipoFooter from '../assets/images/192x192_3-negativo.png';
 import libroReclamaciones from '../assets/images/libro_reclamaciones.png'
 
 function Footer() {
