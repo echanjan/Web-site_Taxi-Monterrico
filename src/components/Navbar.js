@@ -28,7 +28,7 @@ function Navbar() {
             </Link>
             {/* Menú hamburguesa */}
             <div className="hamburger-menu" onClick={toggleMenu}>
-                {menuOpen ? <TbX size={24} /> : <TbMenu2 size={24} />} 
+                {menuOpen ? <TbX size={24} /> : <TbMenu2 size={24} />}
             </div>
             <ul className={`navbar-links-responsive ${menuOpen ? 'menu-open' : ''}`}>
                 <li>
@@ -58,7 +58,7 @@ function Navbar() {
             <div className='intranet'>
                 <ul className='navbar-buttons'>
                     <li>
-                        <Link className='intranet-button' onClick={() => openInNewTab('https://intranet.monterrico.app/')}>Intranet</Link>
+                        <Link className='intranet-button' onClick={() => openInNewTab('https://intranet.taximonterrico.pe/')}>Intranet</Link>
                     </li>
                     <li>
                         <button className='contact-button' onClick={handleContactClick}>Contáctanos</button>
@@ -66,7 +66,7 @@ function Navbar() {
                 </ul>
                 <ul className='navbar-buttons-responsive'>
                     <li>
-                        <Link className='intranet-button-resposive' onClick={() => openInNewTab('https://intranet.monterrico.app/')}><TbUserCircle /></Link>
+                        <Link className='intranet-button-resposive' onClick={() => openInNewTab('https://intranet.taximonterrico.pe/')}><TbUserCircle /></Link>
                     </li>
                 </ul>
             </div>

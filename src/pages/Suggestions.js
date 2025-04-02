@@ -149,7 +149,7 @@ function Suggestions() {
 
         try {
             const response = await axios.post(
-                'https://apibeta.monterrico.app/api/Incidenciau/Registro',
+                'https://api.monterrico.app/api/Incidenciau/Registro',
                 data, // El cuerpo del POST
                 {
                     headers: {
@@ -164,7 +164,7 @@ function Suggestions() {
                     position: "center",
                     icon: "success",
                     title: "¡Enviado!",
-                    text: "¡Gracias por enviar tu sugerencias, muy pronto nos comunicaremos contigo!",
+                    text: "Muy pronto nos comunicaremos contigo.",
                     showConfirmButton: false,
                     timer: 3000
                 })

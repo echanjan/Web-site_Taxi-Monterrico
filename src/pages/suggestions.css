@@ -1,6 +1,7 @@
 @import url(../App.css);
 
-.box-suggestions {
+.box-suggestions,
+.box-info {
     margin: auto;
     position: relative;
     max-width: 1500px;

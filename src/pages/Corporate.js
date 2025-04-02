@@ -178,7 +178,7 @@ function Corporate() {
                     "Categorías que se ajustan a los requerimientos.",
                 ]}
                 button="Reservar viaje"
-                onButtonClick={() => openInNewTab('https://intranet.monterrico.app/')}
+                onButtonClick={() => openInNewTab('https://intranet.taximonterrico.pe/')}
                 img={usuarios}
             />
             <div className='form-contact' id='formContact'>

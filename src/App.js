@@ -12,6 +12,8 @@ import Driver from './pages/Driver';
 import Faq from './pages/Faq';
 import Suggestions from './pages/Suggestions'
 import Policy from './pages/Policy'
+import Info from './pages/Info'
+import DeleteAccount from './pages/DeleteAccount'
 // import Services from './pages/Services';
 // import Contact from './pages/Contact';
 
@@ -27,6 +29,8 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/claimbook" element={<Suggestions />} />
         <Route path="/policy" element={<Policy />} />
+        <Route path="/info" element={<Info />} />
+        <Route path="/deleteaccount" element={<DeleteAccount />} />
         {/* <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>

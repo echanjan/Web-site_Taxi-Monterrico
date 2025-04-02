@@ -89,7 +89,7 @@ function Passenger() {
           'Servicio confiable para todos los traslados.',
         ]}
         button="Ingresa a la web"
-        onButtonClick={() => openInNewTab('https://intranet.monterrico.app/')}
+        onButtonClick={() => openInNewTab('https://intranet.taximonterrico.pe/')}
         img={aeropuerto}
         reverse={true}
       />
@@ -102,7 +102,7 @@ function Passenger() {
           'Reserva fácilmente a través de la app.',
         ]}
         button="Reservar viaje"
-        onButtonClick={() => openInNewTab('https://intranet.monterrico.app/')}
+        onButtonClick={() => openInNewTab('https://intranet.taximonterrico.pe/')}
         img={eventos}
       />
       <div className="box-type-car">

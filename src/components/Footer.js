@@ -73,7 +73,6 @@ function Footer() {
                         <Link to="/terms">Términos y condiciones</Link>
                     </li> */}
                 </ul>
-
             </div>
         </footer>
     );
